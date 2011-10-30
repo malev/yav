@@ -7,6 +7,7 @@ set softtabstop=2
 set ai
 set expandtab
 set smarttab
+set title
 let g:rubycomplete_rails = 1
 set nocompatible   " We're running Vim, not Vi!
 syntax on          " Enable syntax highlighting
@@ -14,6 +15,7 @@ filetype on        " Enable filetype detection
 filetype indent on " Enable filetype-specific indenting
 filetype plugin on " Enable filetype-specific plugins
 compiler ruby      " Enable compiler support for ruby
+let mapleader = ","
 
 highlight Comment ctermbg=DarkGray
 highlight Constant ctermbg=Blue
@@ -70,8 +72,12 @@ map <c-t> <esc>:tabnew<cr>
 map <c-Left> :tabp<cr>
 map <c-Right> :tabn<cr>
 
-" Reduce number of entries found for speed
-let g:fuzzy_ceiling = 40000
-"
-" " Ignore vendor directory
-let g:fuzzy_ignore = 'vendor/*'
+" fuzzyfinder {{{
+let g:fuf_modesDisable = []
+let g:fuf_mrufile_maxItem = 400
+let g:fuf_mrucmd_maxItem = 400
+nnoremap <silent><leader>ff :FufFile<cr>
+nnoremap <silent><leader>fo :FufCoverageFileChange<cr>
+nnoremap <silent><leader>fb :FufCoverageFileRegister<cr>
+nnoremap <silent><leader>fd :FufDir<cr>
+"}}}
