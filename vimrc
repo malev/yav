@@ -78,7 +78,6 @@ map <c-t> <esc>:tabnew<cr>
 map <c-Left> :tabp<cr>
 map <c-Right> :tabn<cr>
 
-<<<<<<< HEAD
 " Reduce number of entries found for speed
 let g:fuzzy_ceiling = 40000
 "
