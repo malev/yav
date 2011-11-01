@@ -1,3 +1,8 @@
+"" Mouse
+if has("mouse")
+  set mouse=a
+endif
+
 set number
 set nocompatible
 set nu
@@ -8,6 +13,7 @@ set ai
 set expandtab
 set smarttab
 let g:rubycomplete_rails = 1
+let mapleader=","
 set nocompatible   " We're running Vim, not Vi!
 syntax on          " Enable syntax highlighting
 filetype on        " Enable filetype detection
@@ -75,3 +81,16 @@ let g:fuzzy_ceiling = 40000
 "
 " " Ignore vendor directory
 let g:fuzzy_ignore = 'vendor/*'
+
+" " Tabs for differente files
+" Tabbing rules
+au BufRead *.html set ts=2 sw=2 sts=2 textwidth=120
+au BufRead *.js set ts=4 sw=4 sts=4"
+au BufRead *.py set ts=4 sw=4 sts=4"
+
+"" FuzzySearch
+nnoremap <silent> <leader>fff :FufFile<CR>
+nnoremap <silent> <leader>ff :FufCoverageFile<CR>
+nnoremap <silent> <leader>fo :FufCoverageFileChange<CR>
+nnoremap <silent> <leader>fb :FufCoverageFileRegister<CR>
+nnoremap <silent> <leader>fd :FufDir<CR>
