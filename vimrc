@@ -12,6 +12,7 @@ set softtabstop=2
 set ai
 set expandtab
 set smarttab
+set title
 let g:rubycomplete_rails = 1
 let mapleader=","
 set nocompatible   " We're running Vim, not Vi!
@@ -20,6 +21,7 @@ filetype on        " Enable filetype detection
 filetype indent on " Enable filetype-specific indenting
 filetype plugin on " Enable filetype-specific plugins
 compiler ruby      " Enable compiler support for ruby
+let mapleader = ","
 
 highlight Comment ctermbg=DarkGray
 highlight Constant ctermbg=Blue
@@ -76,6 +78,7 @@ map <c-t> <esc>:tabnew<cr>
 map <c-Left> :tabp<cr>
 map <c-Right> :tabn<cr>
 
+<<<<<<< HEAD
 " Reduce number of entries found for speed
 let g:fuzzy_ceiling = 40000
 "
