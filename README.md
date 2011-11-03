@@ -19,6 +19,11 @@ FuzzyFinder
 -----------
 Check [this](http://www.ezequielmarquez.com.are/2011/10/fuzzyfinder-vim.html) to use it.
 
+Comments
+--------
+Select some text and hit: Ctrl + C to comment and Ctrl + X to uncomment.
+
 ACK
 ---
-Needs ack installed on your system and it's awesome
+You need to install ack first on your machine. If you have an Ubuntu distro you can do:
+> sudo apt-get install ack-grep
