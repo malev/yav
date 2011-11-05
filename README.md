@@ -26,4 +26,4 @@ Select some text and hit: Ctrl + C to comment and Ctrl + X to uncomment.
 ACK
 ---
 You need to install ack first on your machine. If you have an Ubuntu distro you can do:
-> sudo apt-get install ack-grep
+> sudo apt-get install ack
