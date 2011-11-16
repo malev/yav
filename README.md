@@ -17,7 +17,7 @@ Plugins installed
 
 FuzzyFinder
 -----------
-Check [this](http://www.ezequielmarquez.com.are/2011/10/fuzzyfinder-vim.html) to use it.
+Check [this](http://www.ezequielmarquez.com.ar/2011/10/fuzzyfinder-vim.html) to use it.
 
 Comments
 --------
