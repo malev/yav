@@ -1,6 +1,10 @@
 VIM FILES for malev
 ===================
 
+Install
+-------
+To install just run sh install.sh
+
 Plugins installed
 -----------------
 
