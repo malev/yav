@@ -31,3 +31,14 @@ ACK
 ---
 You need to install ack first on your machine. If you have an Ubuntu distro you can do:
 > sudo apt-get install ack
+
+Credits
+-------
+Thanks to all my 3 users (including myself).
+* [malev -> myself](http://twitter.com/malev).
+* [Martin](http://twitter.com/maku_martin) who is the new installer maintainer.
+* [Pablo](http://twitter.com/pabloroz) who is the boss.
+
+License
+-------
+... nothing for now
