@@ -35,6 +35,7 @@ You need to install ack first on your machine. If you have an Ubuntu distro you 
 Credits
 -------
 Thanks to all my 3 users (including myself).
+
 * [malev -> myself](http://twitter.com/malev).
 * [Martin](http://twitter.com/maku_martin) who is the new installer maintainer.
 * [Pablo](http://twitter.com/pabloroz) who is the boss.
