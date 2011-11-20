@@ -10,9 +10,9 @@ if [[ ! -f $FILE && ! -d $DIR ]]; then
   {
     echo ""
     echo "Installing .vimrc"
-    ln -s ./vimrc "$FILE"
+    ln -s /${PWD#*/}/vimrc "$FILE"
     echo "Installing .vim"
-    ln -s ./vim "$DIR"
+    ln -s /${PWD#*/}/vim "$DIR"
     echo "Done."
   }
 else
