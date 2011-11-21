@@ -1,5 +1,7 @@
 VIM FILES for malev
 ===================
+This are my vim files, I use them to write almost anything, from ruby, rails, python apps
+to blog posts and even some of my Colleague works.*Enjoy!*
 
 Install
 -------
@@ -23,10 +25,12 @@ Plugins installed
 ACK
 ---
 You need to install ack first on your machine. If you have an Ubuntu distro you can do:
-> sudo apt-get install ack-grep 
-And in ports:
-> sudo port install p5-app-ack 
 
+> sudo apt-get install ack-grep 
+
+And in ports:
+
+> sudo port install p5-app-ack 
 
 AutoClose
 ---------
