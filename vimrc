@@ -1,7 +1,7 @@
 "" Mouse
-if has("mouse")
-  set mouse=a
-endif
+""if has("mouse")
+""  set mouse=a
+""endif
 
 set number
 set nocompatible
@@ -21,14 +21,9 @@ filetype on        " Enable filetype detection
 filetype indent on " Enable filetype-specific indenting
 filetype plugin on " Enable filetype-specific plugins
 compiler ruby      " Enable compiler support for ruby
-let mapleader = ","
 
-highlight Comment ctermbg=DarkGray
-highlight Constant ctermbg=Blue
-highlight Normal ctermbg=Black
-highlight NonText ctermbg=Black
-highlight Special ctermbg=DarkMagenta
-highlight Cursor ctermbg=Green
+colo baycomb
+set background=dark
 
 " this next line is needed to enable your custom colors:
 syntax enable
@@ -96,3 +91,6 @@ nnoremap <silent> <leader>ff :FufCoverageFile<CR>
 nnoremap <silent> <leader>fo :FufCoverageFileChange<CR>
 nnoremap <silent> <leader>fb :FufCoverageFileRegister<CR>
 nnoremap <silent> <leader>fd :FufDir<CR>
+
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
