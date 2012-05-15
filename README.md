@@ -18,9 +18,12 @@ Plugins installed
 * [grep.vim](http://www.vim.org/scripts/script.php?script_id=311)
 * [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658)
 * [rails.vim](https://github.com/tpope/vim-rails)
+* [SearchComplete](http://www.vim.org/scripts/script.php?script_id=474)
 * [SuperTab](http://www.vim.org/scripts/script.php?script_id=1643)
+* [Surround](http://www.vim.org/scripts/script.php?script_id=1697)
 * [Syntastic](http://www.vim.org/scripts/script.php?script_id=2736)
 * [Tasklist.vim](http://www.vim.org/scripts/script.php?script_id=2607)
+* [ZenCoding.vim](http://www.vim.org/scripts/script.php?script_id=2981)
 
 ACK
 ---
