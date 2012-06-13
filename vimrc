@@ -70,8 +70,8 @@ map <F2> :TaskList<CR>
 " " Control T nueva pestaña (la cerramos con :q)
 map <c-t> <esc>:tabnew<cr>
 " " Control PageUp/PageDown cambiar de pestaña
-map <c-Left> :tabp<cr>
-map <c-Right> :tabn<cr>
+map <c-p> :tabp<cr>
+map <c-n> :tabn<cr>
 
 " Reduce number of entries found for speed
 let g:fuzzy_ceiling = 40000
@@ -82,7 +82,7 @@ let g:fuzzy_ignore = 'vendor/*'
 " " Tabs for differente files
 " Tabbing rules
 au BufRead *.html set ts=2 sw=2 sts=2 textwidth=120
-au BufRead *.js set ts=4 sw=4 sts=4"
+au BufRead *.js set ts=2 sw=2 sts=2"
 au BufRead *.py set ts=4 sw=4 sts=4"
 
 "" FuzzySearch
@@ -93,4 +93,18 @@ nnoremap <silent> <leader>fb :FufCoverageFileRegister<CR>
 nnoremap <silent> <leader>fd :FufDir<CR>
 
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
+function! Preserve(command)
+  " Preparation: save last search, and cursor position.
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " Do the business:
+  execute a:command
+  " Clean up: restore previous search history, and cursor position
+  let @/=_s
+  call cursor(l, c)
+endfunction
+nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
+nmap _= :call Preserve("normal gg=G")<CR>
 

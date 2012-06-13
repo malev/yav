@@ -89,6 +89,11 @@ TODO
 * Make the installer work fine
 * Write the rails.vim instructions
 
+SHORTCUTS
+---------
+
+Removing unused white spaces as in [Jonathan's blog](http://technotales.wordpress.com/2010/03/31/preserve-a-vim-function-that-keeps-your-state/). It works with `_$`.
+
 License
 -------
 Copyright (c) Marcos Vanetta [blog](http://blog.malev.com.ar). Distributed under the same terms as Vim itself.
