@@ -79,14 +79,6 @@ Tabular
 -------
 It works as in this episode of [Vimcasts](http://vimcasts.org/episodes/aligning-text-with-tabular-vim/). `Leader + a=` or `Leader + a:` in normal and visual mode. If you want to use Tabularize with a different character you can set: `:Tabularize \|` or `:Tabularize \|\zs` in visual model. In the example we are aligning against `|` (pipe) character.
 
-Credits
--------
-Thanks to all my 3 users (including myself).
-
-* [malev -> myself](http://twitter.com/malev).
-* [Martin](http://twitter.com/maku_martin) who is the new installer maintainer.
-* [Pablo](http://twitter.com/pabloroz) who is the boss.
-
 VimErl
 ------
 Vimerl is a plugin for programming in Erlang. It provides several nice features to make your life easier when writing code.
@@ -99,6 +91,14 @@ Vimerl is a plugin for programming in Erlang. It provides several nice features 
 * Compiler support with QuickFix commands 
 * Code skeletons for the OTP behaviours 
 * Pathogen support (http://github.com/tpope/vim-pathogen)
+
+Credits
+-------
+Thanks to all my 3 users (including myself).
+
+* [malev -> myself](http://twitter.com/malev).
+* [Martin](http://twitter.com/maku_martin) who is the new installer maintainer.
+* [Pablo](http://twitter.com/pabloroz) who is the boss.
 
 TODO
 ----
