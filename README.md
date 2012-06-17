@@ -16,7 +16,6 @@ Plugins installed
 * [Comments](http://www.vim.org/scripts/script.php?script_id=1528)
 * [FuzzyFinder](http://www.vim.org/scripts/script.php?script_id=1984)
 * [grep.vim](http://www.vim.org/scripts/script.php?script_id=311)
-* [MRU](http://www.vim.org/scripts/script.php?script_id=194)
 * [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658)
 * [rails.vim](https://github.com/tpope/vim-rails)
 * [SearchComplete](http://www.vim.org/scripts/script.php?script_id=474)
