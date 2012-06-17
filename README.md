@@ -24,7 +24,9 @@ Plugins installed
 * [SuperTab](http://www.vim.org/scripts/script.php?script_id=1643)
 * [Surround](http://www.vim.org/scripts/script.php?script_id=1697)
 * [Syntastic](http://www.vim.org/scripts/script.php?script_id=2736)
+* [Tabular](https://github.com/godlygeek/tabular)
 * [Tasklist.vim](http://www.vim.org/scripts/script.php?script_id=2607)
+* [Vimerl](http://www.vim.org/scripts/script.php?script_id=3743)
 * [ZenCoding.vim](http://www.vim.org/scripts/script.php?script_id=2981)
 
 ACK
@@ -73,6 +75,9 @@ checkers as they are saved and opened. If syntax errors are detected, the user
 is notified and is happy because they didn't have to compile their code or 
 execute their script to find them. 
 
+Tabular
+-------
+It works as in this episode of [Vimcasts](http://vimcasts.org/episodes/aligning-text-with-tabular-vim/). `Leader + a=` or `Leader + a:` in normal and visual mode. If you want to use Tabularize with a different character you can set: `:Tabularize \|` or `:Tabularize \|\zs` in visual model. In the example we are aligning against `|` (pipe) character.
 
 Credits
 -------
@@ -81,6 +86,19 @@ Thanks to all my 3 users (including myself).
 * [malev -> myself](http://twitter.com/malev).
 * [Martin](http://twitter.com/maku_martin) who is the new installer maintainer.
 * [Pablo](http://twitter.com/pabloroz) who is the boss.
+
+VimErl
+------
+Vimerl is a plugin for programming in Erlang. It provides several nice features to make your life easier when writing code.
+
+* Syntax highlighting 
+* Code indenting 
+* Code folding 
+* Code omni completion 
+* Syntax check 
+* Compiler support with QuickFix commands 
+* Code skeletons for the OTP behaviours 
+* Pathogen support (http://github.com/tpope/vim-pathogen)
 
 TODO
 ----
