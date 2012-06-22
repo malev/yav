@@ -70,8 +70,8 @@ map <F2> :TaskList<CR>
 " " Control T nueva pestaña (la cerramos con :q)
 map <c-t> <esc>:tabnew<cr>
 " " Control PageUp/PageDown cambiar de pestaña
-map <c-p> :tabp<cr>
-map <c-n> :tabn<cr>
+map <c-Left> :tabp<cr>
+map <c-Right> :tabn<cr>
 
 " Reduce number of entries found for speed
 let g:fuzzy_ceiling = 40000
@@ -108,3 +108,8 @@ endfunction
 nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
 nmap _= :call Preserve("normal gg=G")<CR>
 
+" " Indentation
+nmap <D-[> <<
+nmap <D-]> >>
+vmap <D-[> <gv
+vmap <D-]> >gv
