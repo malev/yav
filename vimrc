@@ -72,6 +72,8 @@ map <c-t> <esc>:tabnew<cr>
 " " Control PageUp/PageDown cambiar de pestaña
 map <c-Left> :tabp<cr>
 map <c-Right> :tabn<cr>
+map <c-p> :tabp<cr>
+map <c-n> :tabn<cr>
 
 " Reduce number of entries found for speed
 let g:fuzzy_ceiling = 40000
