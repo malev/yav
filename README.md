@@ -31,6 +31,10 @@ Default configuration
 * **Custom functions**: It has some customs functions, for instance it will jump to the last cursor position if the file has already been opened. You can toggle between normal and paste modes with **F2**.
 * **Userful variables**: As any normal Vim, the current filename is stored on `%`, but here you can access to the current path with  `%%` too.
 * **Tabs navigations**: You can create a new tab with `tt`, move to the next tab with `tn`, go back with `tp` and move any tab to any position with `tm` and the position you want.
+* **Panels**: As always you can create new panels with: `:split` and `:vsplit`, or the short ways: `:sp` or `:vp`. But to surf arround the panels you can use the shortkeys: `Ctrl + h`, `Ctrl +j`, `Ctrl + k` and `Ctrl + l`. Which is much faster than the traditional `Ctrl + w` command.
+* Save as sudo with: `:w!!`
+* Common typos support: WQ, Wq, W and Q work as they lower case friends.
+* Switch between the last 2 files on the buffer: `,,`
 
 Plugins installed
 -----------------
