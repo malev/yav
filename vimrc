@@ -120,7 +120,7 @@ endif
 "''''''''''''''''''''''''''''
 augroup vimrcEx
   autocmd!
-  " Jump to last  cursor position unless it's invalid or in an event handler
+  " Jump to last cursor position unless it's invalid or in an event handler
   autocmd BufReadPost *
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
     \   exe "normal g`\"" |
@@ -133,17 +133,12 @@ augroup vimrcEx
 set scrolloff=3
 " toggle paste / nonpaste
 set pastetoggle=<F2>
-" toggle Tagbar display
-map <F4> :TagbarToggle<CR>
 " tab navigation
 map tn :tabn<CR>
 map tp :tabp<CR>
 map tm :tabm
 map tt :tabnew
-map <C-S-Right> :tabn<CR>
-imap <C-S-Right> <ESC>:tabn<CR>
-map <C-S-Left> :tabp<CR>
-imap <C-S-Left> <ESC>:tabp<CR>
+" Hash rocket!
 imap <c-l> <space>=><space>
 :nnoremap <CR> :nohlsearch<cr>
 " navigate windows with meta+arrows
@@ -166,6 +161,8 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 "''''''''''''''''''''''''''''
 " Plugin config
 "''''''''''''''''''''''''''''
+" toggle Tagbar display
+map <F4> :TagbarToggle<CR>
 " Vim markdown - to disable folding.
 let g:vim_markdown_folding_disabled=1
 " autofocus on Tagbar open
