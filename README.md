@@ -1,19 +1,45 @@
-VIM FILES for malev
+Yet Another VIMRC
 ===================
-This are my vim files, I use them to write almost anything, from ruby, rails, python apps
-to blog posts and even some of my Colleague works.*Enjoy!*
+
+                _                          _    _                            _
+    /\_/\  ___ | |_    __ _  _ __    ___  | |_ | |__    ___  _ __   /\   /\ (_) _ __ ___   _ __   ___
+    \_ _/ / _ \| __|  / _` || `_ \  / _ \ | __|| `_ \  / _ \| `__|  \ \ / / | || `_ ` _ \ | `__| / __|
+     / \ |  __/| |_  | (_| || | | || (_) || |_ | | | ||  __/| |      \ V /  | || | | | | || |   | (__
+     \_/  \___| \__|  \__,_||_| |_| \___/  \__||_| |_| \___||_|       \_/   |_||_| |_| |_||_|    \___|
+
+                                                                                 this time by malev
+
+This is my personal vimrc file. It's based on [fisavim](https://github.com/fisadev/fisa-vim-config), but with an agnostic approach. I use this configuration to write code in javascript, ruby and python on my everyday work. I also use it on every VPS under my control.
 
 Install
 -------
-To install just run sh install.sh
+
+    curl https://raw.github.com/malev/yav/master/tool/install.sh | sh
+
+Requirements
+------------
+In order to use this Vimrc file you will need ctags and Ack. To install them on Ubuntu just run:
+
+    sudo apt-get install exuberant-ctags
+    sudo apt-get install ack-grep
+
+Default configuration
+---------------------
+
+### Vim configuration
+* **ColorScheme**: If the terminal has full color support it will use [solarized](http://ethanschoonover.com/solarized), just because it's beatufil! If you don't have full color support then it will switch to , just because it's beatufil! If you don't have full color support then it will switch to [wombat](http://dengmao.wordpress.com/2007/01/22/vim-color-scheme-wombat/).
+* **Custom functions**: It has some customs functions, for instance it will jump to the last cursor position if the file has already been opened. You can toggle between normal and paste modes with **F2**.
+* **Userful variables**: As any normal Vim, the current filename is stored on `%`, but here you can access to the current path with  `%%` too.
+* **Tabs navigations**: You can create a new tab with `tt`, move to the next tab with `tn`, go back with `tp` and move any tab to any position with `tm` and the position you want.
 
 Plugins installed
 -----------------
 
-* [ack.vim](http://www.vim.org/scripts/script.php?script_id=2572)
-* [AutoClose](http://www.vim.org/scripts/script.php?script_id=1849)
-* [autocorrect.vim](http://www.vim.org/scripts/script.php?script_id=2429) 
-* [Comments](http://www.vim.org/scripts/script.php?script_id=1528)
+* [Vundle](https://github.com/gmarik/vundle)
+* [NerdTree](https://github.com/scrooloose/nerdtree)
+* [Comments](https://github.com/vim-scripts/comments.vim)
+* [TagBar](http://majutsushi.github.io/tagbar/)
+
 * [FuzzyFinder](http://www.vim.org/scripts/script.php?script_id=1984)
 * [grep.vim](http://www.vim.org/scripts/script.php?script_id=311)
 * [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658)
@@ -28,89 +54,14 @@ Plugins installed
 * [Vimerl](http://www.vim.org/scripts/script.php?script_id=3743)
 * [ZenCoding.vim](http://www.vim.org/scripts/script.php?script_id=2981)
 
-ACK
----
-You need to install ack first on your machine. If you have an Ubuntu distro you can do:
-
-> sudo apt-get install ack-grep 
-
-And in ports:
-
-> sudo port install p5-app-ack 
-
-AutoClose
----------
-Inserts matching bracket, paren, brace or quote.
-
-Autocorrect
------------
-Automatically autocorrect misspelling or typos. Works without any commands.
-
-Comments
---------
-Select some text and hit: Ctrl + C to comment and Ctrl + X to uncomment.
-
-FuzzyFinder
------------
-Check [this](http://www.ezequielmarquez.com.ar/2011/10/fuzzyfinder-vim.html) to use it.
-
-Grep
-----
-...
-
-NERDTree
---------
-[Video instructions](http://www.youtube.com/watch?v=CPu9mDpSYj0). With F3 you will shot NERDTree.
-Also you can hit ? to see the help information.
-
-SuperTab
---------
-Ctrl + T -> Creates a new tab. With Ctrl + Left or Ctrl + Right you can move thought the tabs.
-
-Syntastic
----------
-Syntastic is a syntax checking plugin that runs buffers through external syntax 
-checkers as they are saved and opened. If syntax errors are detected, the user 
-is notified and is happy because they didn't have to compile their code or 
-execute their script to find them. 
-
-Tabular
--------
-It works as in this episode of [Vimcasts](http://vimcasts.org/episodes/aligning-text-with-tabular-vim/). `Leader + a=` or `Leader + a:` in normal and visual mode. If you want to use Tabularize with a different character you can set: `:Tabularize \|` or `:Tabularize \|\zs` in visual model. In the example we are aligning against `|` (pipe) character.
-
-VimErl
-------
-Vimerl is a plugin for programming in Erlang. It provides several nice features to make your life easier when writing code.
-
-* Syntax highlighting 
-* Code indenting 
-* Code folding 
-* Code omni completion 
-* Syntax check 
-* Compiler support with QuickFix commands 
-* Code skeletons for the OTP behaviours 
-* Pathogen support (http://github.com/tpope/vim-pathogen)
-
-Credits
--------
-Thanks to all my 3 users (including myself).
-
-* [malev -> myself](http://twitter.com/malev).
-* [Martin](http://twitter.com/maku_martin) who is the new installer maintainer.
-* [Pablo](http://twitter.com/pabloroz) who is the boss.
-
-TODO
-----
-
-* Install: https://github.com/tpope/vim-fugitive
-* Make the installer work fine
-* Write the rails.vim instructions
-
-SHORTCUTS
----------
-
-Removing unused white spaces as in [Jonathan's blog](http://technotales.wordpress.com/2010/03/31/preserve-a-vim-function-that-keeps-your-state/). It works with `_$`.
-
 License
 -------
-Copyright (c) Marcos Vanetta [blog](http://blog.malev.com.ar). Distributed under the same terms as Vim itself.
+The MIT License (MIT)
+
+Copyright (c) 2013 Marcos Vanetta, aka [malev](http://malev.com.ar)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
