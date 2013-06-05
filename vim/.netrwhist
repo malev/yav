@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/malev/.vim'
-let g:netrw_dirhist_2='/Users/marcos/code/merchant_sidekick/lib/merchant_sidekick'
-let g:netrw_dirhist_3='/Users/marcos/code/acts_as_list/lib/acts_as_list'
-let g:netrw_dirhist_4='/Users/marcos/.rvm/gems/ruby-1.9.3-p194@givegoods/bundler/gems/merchant_sidekick-dafec49f87bc'
-let g:netrw_dirhist_5='/Users/marcos/code/bvision/ripple/app/assets/javascripts/backbone/models'
-let g:netrw_dirhist_6='/Users/marcos/code/erlang'
-let g:netrw_dirhist_7='/Users/marcos/code/vim-files/vim'
