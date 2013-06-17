@@ -9,7 +9,7 @@ Yet Another VIMRC
 
                                                                                  this time by malev
 
-This is my personal vimrc file. It's based on [fisavim](https://github.com/fisadev/fisa-vim-config), but with an agnostic approach. I use this configuration to write code in javascript, ruby and python on my everyday work. I also use it on every VPS under my control.
+This is my personal vimrc file. It's based on [fisavim](https://github.com/fisadev/fisa-vim-config), but with an **agnostic** approach. I use this configuration to write code in javascript, ruby and python on my everyday work. I also use it on every VPS under my control.
 
 Install
 -------
@@ -31,10 +31,22 @@ Default configuration
 * **Custom functions**: It has some customs functions, for instance it will jump to the last cursor position if the file has already been opened. You can toggle between normal and paste modes with **F2**.
 * **Userful variables**: As any normal Vim, the current filename is stored on `%`, but here you can access to the current path with  `%%` too.
 * **Tabs navigations**: You can create a new tab with `tt`, move to the next tab with `tn`, go back with `tp` and move any tab to any position with `tm` and the position you want.
-* **Panels**: As always you can create new panels with: `:split` and `:vsplit`, or the short ways: `:sp` or `:vp`. But to surf arround the panels you can use the shortkeys: `Ctrl + h`, `Ctrl +j`, `Ctrl + k` and `Ctrl + l`. Which is much faster than the traditional `Ctrl + w` command.
-* Save as sudo with: `:w!!`
+* **Windows**: As always you can create new panels with: `:split` and `:vsplit`, or the short ways: `:sp` or `:vp`. But to surf arround the panels you can use the shortkeys: `Ctrl + h`, `Ctrl +j`, `Ctrl + k` and `Ctrl + l`. Which is much faster than the traditional `Ctrl + w` command.
+* Save as **sudo** with: `:w!!`
 * Common typos support: WQ, Wq, W and Q work as they lower case friends.
 * Switch between the last 2 files on the buffer: `,,`
+
+### Plugins configuration
+* NerdTree F3
+
+New to Vim?
+-----------
+
+testing:
+
+[![ScreenShot](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)
+
+If you are new to vim there are a lot of places where you can start learning about this great tool. You should start watching [this](http://www.youtube.com/watch?v=UlREhZ-orlk&feature=player_embedded) video, you can also read [this](http://pragprog.com/book/dnvim/practical-vim) by Drew Neil or, finally you could watch [this](https://peepcode.com/products/smash-into-vim-i) screencasts serie by Dan Benjamin. Anyway, there is really a lot of vim stuff around the web. My recommendation is that you start with baby steps.
 
 Plugins installed
 -----------------
@@ -43,7 +55,6 @@ Plugins installed
 * [NerdTree](https://github.com/scrooloose/nerdtree)
 * [Comments](https://github.com/vim-scripts/comments.vim)
 * [TagBar](http://majutsushi.github.io/tagbar/)
-
 * [FuzzyFinder](http://www.vim.org/scripts/script.php?script_id=1984)
 * [grep.vim](http://www.vim.org/scripts/script.php?script_id=311)
 * [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658)
