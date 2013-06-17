@@ -37,14 +37,11 @@ Default configuration
 * Switch between the last 2 files on the buffer: `,,`
 
 ### Plugins configuration
-* NerdTree F3
+
+*pending*
 
 New to Vim?
 -----------
-
-testing:
-
-[![ScreenShot](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)
 
 If you are new to vim there are a lot of places where you can start learning about this great tool. You should start watching [this](http://www.youtube.com/watch?v=UlREhZ-orlk&feature=player_embedded) video, you can also read [this](http://pragprog.com/book/dnvim/practical-vim) by Drew Neil or, finally you could watch [this](https://peepcode.com/products/smash-into-vim-i) screencasts serie by Dan Benjamin. Anyway, there is really a lot of vim stuff around the web. My recommendation is that you start with baby steps.
 
