@@ -1,6 +1,6 @@
 if [ -f ~/.yav ]
 then
-  echo "\033[0;33mYou already have Yav installed.\033[0m You'll need to remove ~/.yav if you want to install"
+  echo "\033[0;33mYou already have Yav installed.\033[0m You'll need to remove ~/.yav if you want to reinstall it"
   exit 1
 fi
 
@@ -29,3 +29,6 @@ echo "\033[1;32m"' / \ |  __/| |_  | (_| || | | || (_) || |_ | | | ||  __/| |   
 echo "\033[1;32m"' \_/  \___| \__|  \__,_||_| |_| \___/  \__||_| |_| \___||_|       \_/   |_||_| |_| |_||_|    \___|'"\033[0m"
 echo "\033[1;32m"''"\033[0m"
 echo "\033[1;33m"'                                                                         this time by malev      '"\033[0m"
+echo ""
+echo "Remember to install ack-grep and exuberant-ctags for a nice experience"
+echo ""
