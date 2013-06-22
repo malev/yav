@@ -101,6 +101,12 @@ set hlsearch
 set nu
 " always show status bar
 set ls=2
+" Improve history and undo levels
+set history=1000         " remember more commands and search history
+set undolevels=1000      " use many muchos levels of undo
+set wildignore=*.swp,*.bak,*.pyc,*.class"
+set nobackup
+set noswapfile
 
 "''''''''''''''''''''''''''''
 " Color theme
