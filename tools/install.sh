@@ -1,11 +1,9 @@
-if [ -f ~/.yav ]
-then
+if [ -d ~/.yav ]; then
   echo "\033[0;33mYou already have Yav installed.\033[0m You'll need to remove ~/.yav if you want to reinstall it"
   exit 1
 fi
 
 if which vim > /dev/null; then
-else
   echo "\033[0;33mYou don't have Vim installed. \033[0m"
 fi
 
@@ -15,12 +13,22 @@ hash git >/dev/null && /usr/bin/env git clone git://github.com/malev/yav.git ~/.
   exit
 }
 
-for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc; do
-if [[ ( -e $i ) || ( -h $i ) ]]; then
-echo "${i} has been renamed to ${i}.old"
-    mv "${i}" "${i}.old" || echo "Could not move ${i} to ${i}.old"; exit 1
-  fi
-done
+if [ -d ~/.vimrc ]; then
+  echo "\033[0;34m.vim has been renamed as .vim.old\033[0m"
+  mv ~/.vim .vim.old;
+fi
+
+if [ -f ~/.vimrc ] || [ -h ~/.vimrc ]; then
+  echo "\033[0;34m.vimrc has been renamed as .vimrc.old\033[0m"
+  mv ~/.vimrc ~/.vimrc.old
+fi
+
+if [ -f ~/.gvimrc ] || [ -h ~/.gvimrc ]; then
+  echo "\033[0;34m.gvimrc has been renamed as .gvim.old\033[0m"
+  mv ~/.gvimrc ~/.gvimrc.old
+fi
+
+cp ~/.yav/vimrc ~/.vimrc;
 
 echo "\033[1;32m"'            _                          _    _                            _                        '"\033[0m"
 echo "\033[1;32m"'/\_/\  ___ | |_    __ _  _ __    ___  | |_ | |__    ___  _ __   /\   /\ (_) _ __ ___   _ __   ___ '"\033[0m"
@@ -31,4 +39,6 @@ echo "\033[1;32m"''"\033[0m"
 echo "\033[1;33m"'                                                                         this time by malev      '"\033[0m"
 echo ""
 echo "Remember to install ack-grep and exuberant-ctags for a nice experience"
+echo ""
+echo "\033[1;33m"' run vim and enjoy!                                                                              '"\033[0m"
 echo ""
