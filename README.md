@@ -38,7 +38,13 @@ Default configuration
 
 ### Plugins configuration
 
-*pending*
+* **NERD tree**: `<F3>` To opens the file browser. `o` opens the file, `t` opens in a new tab, `s` opens in a vertical split, `i` opens in a horizontal split. If you type `g` before any instruction, you will have preview mode.
+* **Comments**: `Ctrl + c` to comment selected lines. `Ctrl + x` to uncomment selected lines.
+* **TagBar**: `<F4>` toggles Tag Bar.
+* **CtrlP**: `,e` opens the finder.
+
+*to be continue*
+
 
 New to Vim?
 -----------
