@@ -5,7 +5,7 @@ Plugins installed
 * [NerdTree](https://github.com/scrooloose/nerdtree)
 * [Comments](https://github.com/vim-scripts/comments.vim)
 * [TagBar](http://majutsushi.github.io/tagbar/)
-* [FuzzyFinder](http://www.vim.org/scripts/script.php?script_id=1984)
+* [Ctrlp.vim](https://github.com/kien/ctrlp.vim)
 * [grep.vim](http://www.vim.org/scripts/script.php?script_id=311)
 * [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658)
 * [rails.vim](https://github.com/tpope/vim-rails)
