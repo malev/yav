@@ -6,6 +6,8 @@ Plugins installed
 * [Comments](https://github.com/vim-scripts/comments.vim)
 * [TagBar](http://majutsushi.github.io/tagbar/)
 * [Ctrlp.vim](https://github.com/kien/ctrlp.vim)
+* [TabMan](https://github.com/kien/tabman.vim)
+
 * [grep.vim](http://www.vim.org/scripts/script.php?script_id=311)
 * [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658)
 * [rails.vim](https://github.com/tpope/vim-rails)

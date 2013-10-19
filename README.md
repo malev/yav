@@ -42,6 +42,7 @@ Default configuration
 * **Comments**: `Ctrl + c` to comment selected lines. `Ctrl + x` to uncomment selected lines.
 * **TagBar**: `<F4>` toggles Tag Bar.
 * **CtrlP**: `,e` opens the finder.
+* **TabMan**:  `tl` Toggles tabman, `tf` Focus tabman
 
 *to be continue*
 
