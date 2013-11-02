@@ -43,6 +43,7 @@ Default configuration
 * **TagBar**: `<F4>` toggles Tag Bar.
 * **CtrlP**: `,e` opens the finder.
 * **TabMan**:  `tl` Toggles tabman, `tf` Focus tabman
+* **YankRing**: `<C p>` Paste previous yank, `<C n>` Paste next yank. `:YRShow` show yanked history.
 
 *to be continue*
 
