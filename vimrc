@@ -69,6 +69,8 @@ Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-eunuch'
 " Whitespaces
 Bundle 'bronson/vim-trailing-whitespace'
+" Support for JST/EJS
+Bundle 'briancollins/vim-jst'
 
 " Installing plugins the first time
 if iCanHazVundle == 0
