@@ -114,7 +114,9 @@ set noswapfile
 " Color theme
 "''''''''''''''''''''''''''''
 " use 256 colors when possible
-set background=light
+" set background=light
+set term=builtin_ansi
+syntax on
 if &term =~? 'mlterm\|xterm\|xterm-256\|screen-256'
     let &t_Co = 256
     let g:solarized_termcolors=256
