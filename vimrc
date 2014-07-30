@@ -128,6 +128,7 @@ if &term =~? 'mlterm\|xterm\|xterm-256\|screen-256'
 else
     colorscheme delek
 endif
+    colorscheme delek
 
 "''''''''''''''''''''''''''''
 " Custom functions
