@@ -71,6 +71,10 @@ Bundle 'tpope/vim-eunuch'
 Bundle 'bronson/vim-trailing-whitespace'
 " Support for JST/EJS
 Bundle 'briancollins/vim-jst'
+" Support for Handlebars
+Bundle 'mustache/vim-mustache-handlebars'
+" EditorConfig Vim Plugin
+Bundle 'editorconfig/editorconfig-vim'
 
 " Installing plugins the first time
 if iCanHazVundle == 0

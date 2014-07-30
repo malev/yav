@@ -8,7 +8,6 @@ Plugins installed
 * [Ctrlp.vim](https://github.com/kien/ctrlp.vim)
 * [TabMan](https://github.com/kien/tabman.vim)
 * [vim-jst](https://github.com/briancollins/vim-jst)
-
 * [grep.vim](http://www.vim.org/scripts/script.php?script_id=311)
 * [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658)
 * [rails.vim](https://github.com/tpope/vim-rails)
@@ -21,3 +20,5 @@ Plugins installed
 * [Tasklist.vim](http://www.vim.org/scripts/script.php?script_id=2607)
 * [Vimerl](http://www.vim.org/scripts/script.php?script_id=3743)
 * [ZenCoding.vim](http://www.vim.org/scripts/script.php?script_id=2981)
+* [EditorConfig](https://github.com/editorconfig/editorconfig-vim)
+* [Mustache-Handlebars](https://github.com/mustache/vim-mustache-handlebars)
